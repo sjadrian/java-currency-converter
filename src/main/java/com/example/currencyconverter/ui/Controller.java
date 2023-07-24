@@ -19,7 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable, EventHandler{
+public class Controller implements Initializable, EventHandler {
 
     @FXML
     private Label topCurrencyLabel;
