@@ -13,11 +13,13 @@ import javafx.scene.control.Label;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
-
-import java.util.*;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ResourceBundle;
 
-public class Controller implements Initializable, EventHandler {
+public class Controller implements Initializable, EventHandler{
 
     @FXML
     private Label topCurrencyLabel;
