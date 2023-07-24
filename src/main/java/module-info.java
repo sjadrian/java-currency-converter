@@ -10,4 +10,6 @@ module com.example.currencyconverter {
     exports com.example.currencyconverter;
 
     exports com.example.currencyconverter.model;
+    exports com.example.currencyconverter.ui;
+    opens com.example.currencyconverter.ui to javafx.fxml;
 }

@@ -1,9 +1,9 @@
 package com.example.currencyconverter.model;
 
-import java.net.URL;
-import java.net.HttpURLConnection;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class GetJsonData {
 
