@@ -2,14 +2,13 @@ package com.example.currencyconverter.model;
 
 import java.net.URL;
 import java.net.HttpURLConnection;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class GetJsonData {
 
-    private CurrencyData data;
+    public static CurrencyData getData() {
 
-    public GetJsonData() {
+        CurrencyData data = null;
 
         try {
             URL url = new URL("https://api.exchangerate-api.com/v4/latest/euro") ;
@@ -27,14 +26,11 @@ public class GetJsonData {
                 throw new RuntimeException("HttpResponseCode: " + responseCode);
             } else {
                 ObjectMapper mapper = new ObjectMapper();
-                this.data = mapper.readValue(url.openStream(), CurrencyData.class);
-             }
+                data = mapper.readValue(url.openStream(), CurrencyData.class);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public CurrencyData getData() {
         return data;
     }
 }
