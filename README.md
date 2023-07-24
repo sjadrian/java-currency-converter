@@ -15,7 +15,8 @@ Having some friends from abroad, I often need to convert different currencies. I
 
 
 ## Screenshot
-![java-currency-converter](https://github.com/sjadrian/java-currency-converter/assets/93874977/bd0c4043-38a5-4412-ab7a-b67b5dde2db5)
+![java-currency-converter](https://github.com/sjadrian/java-currency-converter/assets/93874977/4293901f-249c-4cb7-aad1-f21205e9f0d1)
+
 
 
 
