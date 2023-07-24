@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.currencyconverter.Controller">
+   <center>
+      <VBox prefHeight="686.0" prefWidth="535.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox prefHeight="32.0" prefWidth="437.0">
+               <children>
+                  <Label id="topCurrencyLabel" fx:id="topCurrencyLabel" alignment="BOTTOM_LEFT" prefHeight="45.0" prefWidth="40.0" text="€">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label id="topCurrencyValueLabel" fx:id="topCurrencyValueLabel" onMouseClicked="#handle" prefHeight="17.0" prefWidth="235.0" text="1">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <ComboBox id="topCurrencyComboBox" fx:id="topCurrencyComboBox" onAction="#handle" prefHeight="25.0" prefWidth="235.0" promptText="Europe - Euro">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <HBox prefHeight="34.0" prefWidth="437.0">
+               <children>
+                  <Label id="botCurrencyLabel" fx:id="botCurrencyLabel" prefHeight="45.0" prefWidth="40.0" text="\$">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label id="botCurrencyValueLabel" fx:id="botCurrencyValueLabel" onMouseClicked="#handle" prefHeight="17.0" prefWidth="235.0" text="1.11">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <ComboBox id="botCurrencyComboBox" fx:id="botCurrencyComboBox" onAction="#handle" prefHeight="25.0" prefWidth="235.0" promptText="United States - Dollar">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Label id="currencyConversionLabel" fx:id="currencyConversionLabel" text="1 1DR = 0.02 USD">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label id="dateLabel" fx:id="dateLabel" text="Updated: 7/22/2023">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <GridPane id="button1" accessibleText="1" gridLinesVisible="true" prefHeight="336.0" prefWidth="508.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button id="button7" fx:id="button7" alignment="CENTER" mnemonicParsing="false" onAction="#handle" prefHeight="119.0" prefWidth="211.0" text="7" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="button8" fx:id="button8" alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" prefHeight="119.0" prefWidth="211.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="button9" fx:id="button9" alignment="CENTER" layoutX="210.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" prefHeight="119.0" prefWidth="211.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="button3" fx:id="button3" alignment="CENTER" mnemonicParsing="false" onAction="#handle" prefHeight="119.0" prefWidth="211.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="button2" fx:id="button2" alignment="CENTER" mnemonicParsing="false" onAction="#handle" prefHeight="119.0" prefWidth="211.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="button1" fx:id="button1" alignment="CENTER" mnemonicParsing="false" onAction="#handle" prefHeight="119.0" prefWidth="211.0" text="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="button6" fx:id="button6" alignment="CENTER" mnemonicParsing="false" onAction="#handle" prefHeight="119.0" prefWidth="211.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="button5" fx:id="button5" alignment="CENTER" mnemonicParsing="false" onAction="#handle" prefHeight="119.0" prefWidth="211.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="button4" fx:id="button4" alignment="CENTER" mnemonicParsing="false" onAction="#handle" prefHeight="119.0" prefWidth="211.0" text="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="buttonDot" fx:id="buttonDot" alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" prefHeight="119.0" prefWidth="211.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="button0" fx:id="button0" alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" prefHeight="119.0" prefWidth="211.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="buttonX" fx:id="buttonX" alignment="CENTER" mnemonicParsing="false" onAction="#handle" prefHeight="119.0" prefWidth="211.0" text="X" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="buttonClear" fx:id="buttonClear" alignment="CENTER" mnemonicParsing="false" onAction="#handle" prefHeight="119.0" prefWidth="211.0" text="CE" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label text="Currency" BorderPane.alignment="CENTER_LEFT">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+</BorderPane>
