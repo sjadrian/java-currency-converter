@@ -20,7 +20,7 @@ public class GetJsonData {
 
             // check if connection is made
             int responseCode = connection.getResponseCode();
-            System.out.println("Response code: " + responseCode);
+            System.out.println("Response code:  " + responseCode);
 
             // 200 OK
             if (responseCode != 200) {
